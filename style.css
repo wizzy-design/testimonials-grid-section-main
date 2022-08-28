@@ -253,18 +253,27 @@ span{
 }
 
 /* Mobile-version */
-@media screen and (min-width: 345px) and (max-width: 550px){
+@media screen and (min-width: 320px) and (max-width: 550px){
     span{
         display: inline;
     }
 
-    html{
+    /* html{
         /* display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center; */
+        justify-content: center; 
         overflow-x: hidden;
         min-width: 600px;
+    } */
+
+    html,
+    body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
     }
 
     #container{
@@ -300,7 +309,7 @@ span{
     .white,
     #blue,
     .container-right .white{
-        width: 70%;
+        width: 100%;
     }
 
     .container-right .white{
@@ -312,6 +321,11 @@ span{
         justify-content: center;
         align-items: center;
     }
+
+    .name{
+        z-index: 1;
+    }
+
 }
 
 
